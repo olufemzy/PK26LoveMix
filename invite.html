@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>#PK26LoveMix – Exclusive Guest Pass</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<link rel="stylesheet" href="invite.css">
+</head>
+
+<body>
+
+<h1>Exclusive Wedding Guest Pass</h1>
+<p>Enter your name to generate your personalised pass</p>
+
+<input type="text" id="guestName" placeholder="Enter your full name">
+<br>
+<button onclick="generateInvite()">Generate My Pass</button>
+
+<div class="outer-wrapper" id="outerWrapper">
+<div class="invite-wrapper" id="inviteWrapper">
+
+    <div class="invite-card" id="inviteCard">
+
+        <div class="top-names">Priscillia & Kolade</div>
+        <div class="hashtag">#PK’26LoveMix</div>
+
+        <div class="reserved">SEAT RESERVED FOR</div>
+        <div class="guest-name" id="displayName"></div>
+
+        <div class="message">
+            We are truly honoured that you will celebrate our special day with us.
+            Your presence means more to us than words can express.
+        </div>
+
+        <div class="details">
+            Thursday, 20th August 2026<br>
+            J and C Events Centre, Ibadan
+        </div>
+
+        <div class="signature">
+            With Love,<br>
+            Priscillia & Kolade
+        </div>
+
+        <div class="qr-container" id="qrcode"></div>
+        <div class="invite-id" id="inviteId"></div>
+
+        <div class="watermark">#PK’26LoveMix</div>
+
+    </div>
+
+    <div class="action-buttons">
+        <button onclick="downloadImage()">Download</button>
+        <button onclick="shareWhatsApp()">Share via WhatsApp</button>
+    </div>
+
+</div>
+</div>
+
+
+<script src="invite.js"></script>
+</body>
+</html>

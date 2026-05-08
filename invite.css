@@ -1,0 +1,192 @@
+/* body {
+    background: linear-gradient(to bottom, #f6f1ea, #efe7dc);
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    padding: 40px 20px;
+} */
+ h1 {
+    
+  font-family:'Cormorant Garamond',serif;
+  font-size:25px;font-style:italic;
+    color: #6b1a2b;
+} p{
+   margin: 0px ;
+  font-family:'Jost',sans-serif;font-size:15px;font-weight:300;
+}
+
+input {
+   padding: 14px 18px;
+   width: 300px;
+   max-width: 90%;
+   border-radius: 8px;
+   border: 1px solid #ddd;
+   outline: none;
+}
+ button {
+   padding: 14px 24px;
+   background: #6b1a2b;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+button:hover {
+    background: #5e0017;
+}
+
+/* Outer Wrapper */
+/* .outer-wrapper {
+    z-index: 1000;
+   display: none;
+   background: rgba(0,0,0,0.5);
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100vh;
+} */
+
+.outer-wrapper {
+    background: black;
+    text-align: center;
+}
+
+/* Invite Wrapper */
+.invite-wrapper {
+    overflow: auto;
+    margin-top: 50px;
+    display: none;
+    animation: fadeIn 1.2s ease forwards;
+   text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.invite-card {
+    width: 750px;
+    /* max-width: 95%; */
+    min-width: 95%;
+    background-image: url(images/invite-bg-c.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(to bottom, #ffffff, #faf7f2); */
+    padding: 90px 70px;
+    border-radius: 12px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.1);
+    border: 2px solid #c6a769; /* simple gold border */
+}
+
+/* .invite-card {
+    width: 750px;
+    max-width: 95%;
+    background: linear-gradient(to bottom, #ffffff, #faf7f2);
+    padding: 90px 70px;
+    border-radius: 12px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.1);
+    overflow: hidden;
+} */
+
+/* Gold shimmer border */
+/* .invite-card:before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(120deg, #c6a769, #f3e5ab, #c6a769);
+    -webkit-mask: 
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: shimmer 3s linear infinite;
+} */
+
+@keyframes shimmer {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.4); }
+    100% { filter: brightness(1); }
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 14px;
+    opacity: 0.08;
+    font-family: 'Playfair Display', serif;
+}
+
+.top-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #6b1a2b;
+}
+
+.hashtag {
+    margin-bottom: 30px;
+    color: #c6a769;
+}
+
+.reserved {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #777;
+}
+
+.guest-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin: 15px 0 25px;
+    color: #6b1a2b;
+    text-transform: capitalize;
+}
+
+.message {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: auto;
+}
+
+.details {
+    margin-top: 35px;
+    font-size: 18px;
+    color: #6e6a63;
+}
+
+.signature {
+    margin-top: 45px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #6b1a2b;
+}
+
+.qr-container {
+    margin-top: 30px;
+}
+
+.invite-id {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.action-buttons {
+    margin-top: 25px;
+}
+
+.action-buttons button {
+    margin: 8px;
+}
