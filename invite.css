@@ -70,7 +70,7 @@ button:hover {
 }
 .invite-card {
     width: 750px;
-    /* max-width: 95%; */
+    max-width: 95%;
     min-width: 95%;
     background-image: url(images/invite-bg-c.jpg);
     background-size: cover;
@@ -167,7 +167,7 @@ button:hover {
 }
 
 .signature {
-    margin-top: 45px;
+    margin-top: 40px;
     font-family: 'Great Vibes', cursive;
     font-size: 28px;
     color: #6b1a2b;
@@ -181,6 +181,7 @@ button:hover {
     margin-top: 10px;
     font-size: 14px;
     color: #888;
+    text-align: right;
 }
 
 .action-buttons {
