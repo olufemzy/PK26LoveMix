@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>#PK'26LoveStory — Our Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <!-- metas -->
+    <meta name="description" content="A few stolen moments before the big day">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PK'26LoveStory" />
+    <meta property="og:description" content="A few stolen moments before the big day"/>
+    <meta property="og:image" content="https://pk26lovestory.vercel.app/images/preview.jpeg"/>
+    <meta property="og:url"content="https://pk26lovestory.vercel.app"/>
+
+
+    <link rel="stylesheet" href="gallery.css"/>
+  </head>
+  <body>
+
+    <nav >
+      <div class="nav-logo">P &amp; K</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Our Story</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="index.html#venue">Venue</a></li>
+        <li><a href="index.html#dresscode">Dress Code</a></li>
+        <li><a href="index.html#rsvp">RSVP</a></li>
+      </ul>
+      <div class="nav-hashtag">#PK'26LoveStory</div>
+    </nav>
+
+    <section class="gallery-section">
+
+      <!-- Ambient -->
+      <div class="glow-orb glow-orb-1"></div>
+      <div class="glow-orb glow-orb-2"></div>
+      <div class="glow-orb glow-orb-3"></div>
+
+      <!-- Header -->
+      <div class="gallery-header">
+        <span class="gallery-eyebrow">✦ Pre-Wedding ✦</span>
+        <h2 class="gallery-title">Our <em>Story</em> in Frames</h2>
+        <div class="gold-rule"><span>✦</span></div>
+        <p class="gallery-sub">
+          A few stolen moments before the big day —<br>
+          Priscillia &amp; Kolade, August 2026.
+        </p>
+      </div>
+
+      <!-- ── CAROUSEL ROW 1 ── -->
+      <div class="carousel-wrap" style="margin-bottom: 20px;">
+        <div class="carousel-track row-1" id="track-1">
+          <!-- Cards duplicated for seamless loop (JS does this) -->
+        </div>
+      </div>
+
+      <!-- ── CAROUSEL ROW 2 ── -->
+      <!-- <div class="carousel-wrap">
+        <div class="carousel-track row-2" id="track-2">
+        </div>
+      </div> -->
+
+      <!-- Upload hint -->
+      <!-- <div class="upload-hint">
+        <p>📸 Replace placeholders with your real pre-wedding photos — just swap the <strong>src</strong> on each <strong>&lt;img&gt;</strong> tag</p>
+      </div> -->
+
+      <!-- Footer -->
+      <div class="gallery-footer">
+        <div class="gallery-footer-tag">#PK'26LoveStory</div>
+        <div class="gallery-footer-note">Thursday · 20th August 2026 · Ibadan</div>
+      </div>
+
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <button class="lb-close" onclick="closeLightbox()">✕ Close</button>
+      <button class="lb-nav lb-prev" onclick="lbNav(-1)">‹</button>
+      <div class="lb-img-wrap">
+        <img id="lb-img" src="" alt=""/>
+      </div>
+      <button class="lb-nav lb-next" onclick="lbNav(1)">›</button>
+      <div class="lb-counter" id="lb-counter"></div>
+    </div>
+
+    <script src="gallery.js"></script>  
+  </body>
+</html>

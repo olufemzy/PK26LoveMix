@@ -10,7 +10,163 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-<link rel="stylesheet" href="invite.css">
+<!-- <link rel="stylesheet" href="invite.css"> -->
+
+<style>
+body {
+    background: linear-gradient(to bottom, #f6f1ea, #efe7dc);
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #800020;
+}
+
+input {
+    padding: 14px 18px;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 14px 24px;
+    background: #800020;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5e0017;
+}
+
+/* Invite Wrapper */
+.invite-wrapper {
+    margin-top: 50px;
+    display: none;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.invite-card {
+    width: 750px;
+    max-width: 95%;
+    background-image: url(images/invite-bg-c.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 90px 70px;
+    border-radius: 12px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Gold shimmer border */
+.invite-card:before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(120deg, #c6a769, #f3e5ab, #c6a769);
+    -webkit-mask: 
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.4); }
+    100% { filter: brightness(1); }
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 14px;
+    opacity: 0.08;
+    font-family: 'Playfair Display', serif;
+}
+
+.top-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #800020;
+}
+
+.hashtag {
+    margin-bottom: 30px;
+    color: #c6a769;
+}
+
+.reserved {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #777;
+}
+
+.guest-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin: 15px 0 25px;
+    color: #800020;
+}
+
+.message {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: auto;
+}
+
+.details {
+    margin-top: 35px;
+    font-size: 18px;
+    color: #6e6a63;
+}
+
+.signature {
+    margin-top: 45px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #800020;
+}
+
+.qr-container {
+    margin-top: 30px;
+}
+
+.invite-id {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.action-buttons {
+    margin-top: 25px;
+}
+
+.action-buttons button {
+    margin: 8px;
+}
+</style>
 </head>
 
 <body>

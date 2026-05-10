@@ -70,7 +70,7 @@ button:hover {
 }
 .invite-card {
     width: 750px;
-    max-width: 95%;
+    /* max-width: 95%; */
     min-width: 95%;
     background-image: url(images/invite-bg-c.jpg);
     background-size: cover;
