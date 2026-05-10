@@ -573,7 +573,7 @@ nav{
   transition:background 0.2s, transform 0.2s;
 }
 .rsvp-contact:hover{background:var(--ivory);transform:scale(1.01);}
-.rsvp-contact-info{}
+/* .rsvp-contact-info{} */
 .rsvp-contact-label{
   font-family:'Cinzel',serif;font-size:8px;letter-spacing:0.18em;
   text-transform:uppercase;color:var(--gold);margin-bottom:3px;
@@ -651,6 +651,11 @@ nav{
 }
 .gift-copy-btn:hover{background:var(--burgundy-light);}
 
+.gallery-btn{
+  display:none;
+}
+
+
 /* ═══ FOOTER ═══ */
 footer{
   background:var(--burgundy-deep);
@@ -701,11 +706,26 @@ footer{
   align-self:flex-start;padding-top:4px;
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
   .events-grid,.dresscode-grid{grid-template-columns:1fr;}
   .hero-names{font-size:42px;}
   .rsvp-card{padding:32px 22px;}
   .gifts-card{padding:32px 22px;}
   nav{padding:14px 20px;}
   .nav-links{display:none;}
+
+  .gallery-btn{
+    color:#f8f0e8;
+    border-radius:24px;
+    padding:10px 22px;
+    display: inline-flex;align-items: center;justify-content: center;
+    background: rgba(107, 26, 44, 0.74);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.18em;
+    text-transform:uppercase;cursor:pointer;
+    text-decoration: none;
+  }
 }
