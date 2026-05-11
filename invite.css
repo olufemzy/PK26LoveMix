@@ -40,8 +40,12 @@ button:hover {
 .outer-wrapper {
     display: none;
     text-align: center;
-    position: fixed;
-    inset: 0;
+    /* enables the moodal to show */
+    /* position: fixed;
+    inset: 0; */
+    /* hides the invite modal*/
+    position: absolute;
+    left:-9999px; top:-9999px;
     z-index: 1200;
     background: rgba(0, 0, 0, 0.651);
     backdrop-filter: blur(12px);

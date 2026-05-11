@@ -1,4 +1,23 @@
 // ── RSVP Invite Generation
+function downloadImage() {
+    const card = document.getElementById("inviteCard");
+
+    // Wait for fonts to fully load
+    document.fonts.ready.then(() => {
+        html2canvas(card, {
+            scale: 3, // ultra HD
+            useCORS: true,
+            backgroundColor: null
+        }).then(canvas => {
+            const link = document.createElement("a");
+            link.download = "PK26LoveMix-GuestPass.png";
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        });
+    });
+    
+//   document.getElementById("inviteWrapper").style.display = "none";
+}
     function generateInvite() {
         const name = document.getElementById("guestName").value.trim();
         if (!name) return alert("Please enter your name.");
@@ -9,7 +28,7 @@
         document.getElementById("inviteId").innerText = "Invite ID: " + inviteId;
 
         document.getElementById("outerWrapper").style.display = "block";
-        document.body.style.overflow = 'hidden'; // stop background scroll when invite modal is open
+        // document.body.style.overflow = 'hidden'; // stop background scroll when invite modal is open
 
         document.getElementById("qrcode").innerHTML = "";
 
@@ -20,6 +39,9 @@
         });
 
         document.getElementById("invite").scrollIntoView({ behavior: "smooth" });
+       
+        // DOWNLOAD THE INVITE 
+        downloadImage()
     }
 
     // function downloadImage() {
@@ -37,25 +59,7 @@
         document.getElementById("invite").scrollIntoView({ behavior: "smooth" });
     }
 
-    function downloadImage() {
-      const card = document.getElementById("inviteCard");
-
-      // Wait for fonts to fully load
-      document.fonts.ready.then(() => {
-          html2canvas(card, {
-              scale: 3, // ultra HD
-              useCORS: true,
-              backgroundColor: null
-          }).then(canvas => {
-              const link = document.createElement("a");
-              link.download = "PK26LoveMix-GuestPass.png";
-              link.href = canvas.toDataURL("image/png");
-              link.click();
-          });
-      });
-      
-    //   document.getElementById("inviteWrapper").style.display = "none";
-    }
+    
 
     function shareWhatsApp() {
         const name = document.getElementById("displayName").innerText;
