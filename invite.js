@@ -9,11 +9,12 @@
         document.getElementById("inviteId").innerText = "Invite ID: " + inviteId;
 
         document.getElementById("outerWrapper").style.display = "block";
+        document.body.style.overflow = 'hidden'; // stop background scroll when invite modal is open
 
         document.getElementById("qrcode").innerHTML = "";
 
         new QRCode(document.getElementById("qrcode"), {
-            text: `Guest: ${name}\nInvite ID: ${inviteId}\n#PK26LoveMix\n20 August 2026`,
+            text: `Guest: ${name}\nInvite ID: ${inviteId}\n#PK26LoveStory\n20 August 2026`,
             width: 100,
             height: 100
         });
@@ -32,6 +33,7 @@
 
     function closeInvite() {
         document.getElementById("outerWrapper").style.display = "none";
+        document.body.style.overflow = '';  // restore scroll
         document.getElementById("invite").scrollIntoView({ behavior: "smooth" });
     }
 
@@ -57,6 +59,6 @@
 
     function shareWhatsApp() {
         const name = document.getElementById("displayName").innerText;
-        const text = `I will be attending #PK26LoveMix 💍\nSeat Reserved For: ${name}\n20th August 2026\nJ and C Events Centre, Ibadan`;
+        const text = `I will be attending #PK26LoveStory 💍\nSeat Reserved For: ${name}\n20th August 2026\nJ and C Events Centre, Ibadan`;
         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`);
     }

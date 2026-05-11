@@ -328,7 +328,7 @@
 
                 <input type="text" id="guestName" placeholder="Enter your full name">
                 <br>
-                <button onclick="generateInvite()">Generate My Pass</button>
+                <button onclick="generateInvite()">Generate My Invite</button>
               </div>
 
               <div class="rsvp-assistance" style="display:flex; flex-direction:column; gap:10px;">
@@ -483,6 +483,53 @@
         <button class="lb-nav lb-next" onclick="lbNav(1)">›</button>
         <div class="lb-counter" id="lb-counter"></div>
       </div>
+      
+      <!-- VIDEO MODAL -->
+      <div id="video-modal">
+        <!-- closes backdrop  -->
+        <div class="modal-backdrop" onclick="closeVideoModal()"></div>
+      
+        <div class="modal-box">
+          <!-- Top bar -->
+          <div class="modal-topbar">
+            <div class="modal-title">
+              <div class="modal-title-dot"></div>
+              <div>
+                <div class="modal-title-text">Priscillia &amp; Kolade</div>
+                <div class="modal-title-sub">Our Love Story · #PK'26LoveStory</div>
+              </div>
+            </div>
+            <button class="modal-close" onclick="closeVideoModal()" title="Close">✕</button>
+          </div>
+          <!-- Video -->
+          <div class="video-wrap">
+            <!-- <iframe
+              id="yt-player"
+              src="about:blank"
+              data-src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0&modestbranding=1"
+              title="Priscillia & Kolade — Our Story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe> -->
+            <video
+              id="local-video"
+              controls
+              preload="none"
+              poster="images/preview.jpeg">
+              <source src="images/lovestory.mp4" type="video/mp4"/>
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <!-- Bottom bar -->
+          <div class="modal-bottombar">
+            <div class="modal-bottom-text">
+              <!-- Thursday · 20th August 2026 · Ibadan &nbsp;·&nbsp; -->
+              <span class="modal-bottom-tag">#PK'26LoveStory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- FOOTER -->
       <footer>
