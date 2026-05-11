@@ -8,7 +8,7 @@
         document.getElementById("displayName").innerText = name;
         document.getElementById("inviteId").innerText = "Invite ID: " + inviteId;
 
-        document.getElementById("inviteWrapper").style.display = "block";
+        document.getElementById("outerWrapper").style.display = "block";
 
         document.getElementById("qrcode").innerHTML = "";
 
@@ -18,7 +18,7 @@
             height: 100
         });
 
-        document.getElementById("inviteWrapper").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("invite").scrollIntoView({ behavior: "smooth" });
     }
 
     // function downloadImage() {
@@ -29,6 +29,11 @@
     //         link.click();
     //     });
     // }
+
+    function closeInvite() {
+        document.getElementById("outerWrapper").style.display = "none";
+        document.getElementById("invite").scrollIntoView({ behavior: "smooth" });
+    }
 
     function downloadImage() {
       const card = document.getElementById("inviteCard");
@@ -46,6 +51,8 @@
               link.click();
           });
       });
+      
+    //   document.getElementById("inviteWrapper").style.display = "none";
     }
 
     function shareWhatsApp() {

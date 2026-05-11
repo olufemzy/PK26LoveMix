@@ -322,45 +322,13 @@
             <div class="rsvp-deadline">📅 Please RSVP as soon as possible</div>
             
             <div class="rsvp-contacts">
-              <div class="invite">
+              <div class="invite" id="invite">
                 <h1>Exclusive Wedding Guest Invite</h1>
                 <p>Enter your name to generate your personalised pass</p>
 
                 <input type="text" id="guestName" placeholder="Enter your full name">
                 <br>
                 <button onclick="generateInvite()">Generate My Pass</button>
-
-                <div class="outer-wrapper" id="outerWrapper">
-
-                  <div class="invite-wrapper" id="inviteWrapper">
-                    <div class="invite-card" id="inviteCard">
-                      <div class="top-names">Priscillia & Kolade</div>
-                      <div class="hashtag">#PK’26LoveStory</div>
-                      <div class="reserved">SEAT RESERVED FOR</div>
-                      <div class="guest-name" id="displayName"></div>
-                      <div class="message">
-                        We are truly honoured that you will celebrate our special day with us.
-                        Your presence means more to us than words can express.
-                      </div>
-                      <div class="details">
-                        Thursday, 20th August 2026<br>
-                        J and C Events Centre, Ibadan
-                      </div>
-                      <div class="signature">
-                        With Love,<br>
-                        Priscillia & Kolade
-                      </div>
-                      <div class="qr-container" id="qrcode"></div>
-                      <div class="invite-id" id="inviteId"></div>
-                      <div class="watermark">#PK’26LoveStory</div>
-                    </div>
-
-                    <div class="action-buttons">
-                      <button onclick="downloadImage()">Download</button>
-                      <!-- <button onclick="shareWhatsApp()">Share via WhatsApp</button> -->
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div class="rsvp-assistance" style="display:flex; flex-direction:column; gap:10px;">
@@ -387,6 +355,40 @@
           </div>
         </div>
       </section>
+
+      <!-- INVITE MODAL -->
+      <div class="outer-wrapper" id="outerWrapper">
+        <button id="closeInvite" onclick="closeInvite()">❌</button>
+        <div class="invite-wrapper" id="inviteWrapper">
+          <div class="invite-card" id="inviteCard">
+            <div class="top-names">Priscillia & Kolade</div>
+            <div class="hashtag">#PK’26LoveStory</div>
+            <div class="reserved">SEAT RESERVED FOR</div>
+            <div class="guest-name" id="displayName"></div>
+            <div class="message">
+              We are truly honoured that you will celebrate our special day with us.
+              Your presence means more to us than words can express.
+            </div>
+            <div class="details">
+              Thursday, 20th August 2026<br>
+              J and C Events Centre, Ibadan
+            </div>
+            <div class="signature">
+              With Love,<br>
+              Priscillia & Kolade
+            </div>
+            <div class="qr-container" id="qrcode"></div>
+            <div class="invite-id" id="inviteId"></div>
+            <div class="watermark">#PK’26LoveStory</div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <p>Click the download button below to save your invite</p>
+          <button onclick="downloadImage()">Download Invite</button>
+          <!-- <button onclick="shareWhatsApp()">Share via WhatsApp</button> -->
+        </div>
+      </div>
 
       <!-- GIFTS -->
       <section class="section gifts-section" id="gifts">
@@ -458,6 +460,16 @@
           <div class="gallery-footer-tag">#PK'26LoveStory</div>
           <div class="gallery-footer-note">Thursday · 20th August 2026 · Ibadan</div>
         </div> -->
+
+        <!-- Video Button -->
+        <div class="video-section">
+          <button class="watch-btn" onclick="openVideoModal()">
+            <span class="play-circle">
+              <span class="play-icon"></span>
+            </span>
+            Watch Our Story
+          </button>
+        </div>
 
       </section>
 
