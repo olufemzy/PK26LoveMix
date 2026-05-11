@@ -672,12 +672,12 @@ footer{
   color:var(--gold);margin-bottom:32px;
 }
 .footer-verse{
-  font-family:'Jost',sans-serif;font-size:13px;font-weight:300;
+  font-family:'Jost',sans-serif;font-size:14px;font-weight:300;
   color:rgba(248,243,236,0.5);line-height:1.8;
   max-width:400px;margin:0 auto 32px;
 }
 .footer-bottom{
-  font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:0.18em;
+  font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.18em;
   text-transform:uppercase;color:rgba(248,243,236,0.3);
 }
 
@@ -724,6 +724,7 @@ footer{
     position: fixed;
     bottom: 25px;
     right: 25px;
+    z-index: 900;
     font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.18em;
     text-transform:uppercase;cursor:pointer;
     text-decoration: none;

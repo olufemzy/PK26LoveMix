@@ -57,7 +57,11 @@ nav{
   padding: 100px 0 80px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #1a0c10 0%, #2d1018 40%, #1a0c10 100%);
+  background: white;
+  /* background: linear-gradient(180deg, #1a0c10 0%, #2d1018 40%, #1a0c10 100%); */
+  /* background:linear-gradient(160deg,var(--burgundy-deep) 0%,var(--burgundy) 100%); */
+  background:var(--burgundy-deep);
+
 }
 
 /* Background texture */
@@ -162,6 +166,9 @@ nav{
 .carousel-wrap {
   position: relative; z-index: 2;
   overflow: hidden;
+  /* scrollbar-width: thin;
+  max-width: 100%;
+  box-sizing: border-box; */
   /* fade edges */
   mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
