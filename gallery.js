@@ -6,14 +6,14 @@
 // ══════════════════════════════════════════════
 const photos = [
   // Row 1 photos
-  { src: 'images/preview.jpeg', label: 'Golden Hour', size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#c9a96e22,#6b1a2b44)', icon: '🌅' },
-  { src: 'images/gallery1.jpeg', label: 'Just Us',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b44,#4a0f1c88)', icon: '💑' },
-  { src: 'images/preview.jpeg', label: 'First Look',  size: 'tall',    row: 1, gradient: 'linear-gradient(135deg,#4a0f1c66,#c9a96e33)', icon: '👀' },
-  { src: 'images/gallery2.jpeg', label: 'Laughter',    size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#8b2a3f44,#2d101866)', icon: '😄' },
-  { src: 'images/preview.jpeg', label: 'The Ring',    size: 'tall',    row: 1, gradient: 'linear-gradient(135deg,#c9a96e44,#6b1a2b55)', icon: '💍' },
-  { src: 'images/gallery3.jpeg', label: 'Together',    size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b55,#4a0f1c77)', icon: '🤝' },
-  { src: 'images/preview.jpeg', label: 'In Love',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#2d1018aa,#c9a96e22)', icon: '❤️' },
-  { src: 'images/gallery4.jpeg', label: 'Rooftop',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#4a0f1c88,#8b2a3f44)', icon: '🏙️' },
+  { src: 'images/POR 29.jpeg', label: 'Golden Hour', size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#c9a96e22,#6b1a2b44)', icon: '🌅' },
+  { src: 'images/POR 30.jpeg', label: 'Just Us',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b44,#4a0f1c88)', icon: '💑' },
+  { src: 'images/POR 31.jpeg', label: 'First Look',  size: 'tall',    row: 1, gradient: 'linear-gradient(135deg,#4a0f1c66,#c9a96e33)', icon: '👀' },
+  { src: 'images/POR 32.jpeg', label: 'Laughter',    size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#8b2a3f44,#2d101866)', icon: '😄' },
+  { src: 'images/POR 33.jpeg', label: 'The Ring',    size: 'tall',    row: 1, gradient: 'linear-gradient(135deg,#c9a96e44,#6b1a2b55)', icon: '💍' },
+  { src: 'images/POR 34.jpeg', label: 'Together',    size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b55,#4a0f1c77)', icon: '🤝' },
+  { src: 'images/POR 35.jpeg', label: 'In Love',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#2d1018aa,#c9a96e22)', icon: '❤️' },
+  { src: 'images/POR 36.jpeg', label: 'Rooftop',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#4a0f1c88,#8b2a3f44)', icon: '🏙️' },
 
   // Row 2 photos
 //   { src: null, label: 'Strolling',   size: 'wide',  row: 2, gradient: 'linear-gradient(135deg,#6b1a2b33,#c9a96e44)', icon: '🚶' },
