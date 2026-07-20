@@ -14,14 +14,15 @@ const photos = [
   { src: 'images/POR 34.jpeg', label: 'Together',    size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b55,#4a0f1c77)', icon: '🤝' },
   { src: 'images/POR 35.jpeg', label: 'In Love',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#2d1018aa,#c9a96e22)', icon: '❤️' },
   { src: 'images/POR 36.jpeg', label: 'Rooftop',     size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#4a0f1c88,#8b2a3f44)', icon: '🏙️' },
+  { src: 'images/POR 37.jpeg', label: 'Candid',   size: 'tall',  row: 1, gradient: 'linear-gradient(135deg,#6b1a2b33,#c9a96e44)', icon: '🚶' },
 
   // Row 2 photos
-//   { src: null, label: 'Strolling',   size: 'wide',  row: 2, gradient: 'linear-gradient(135deg,#6b1a2b33,#c9a96e44)', icon: '🚶' },
+//   { src: null, label: 'Candid',   size: 'wide',  row: 2, gradient: 'linear-gradient(135deg,#6b1a2b33,#c9a96e44)', icon: '🚶' },
 //   { src: null, label: 'Whispers',    size: 'tall',  row: 2, gradient: 'linear-gradient(135deg,#4a0f1c66,#8b2a3f44)', icon: '🤫' },
 //   { src: null, label: 'Sunset',      size: 'sq',    row: 2, gradient: 'linear-gradient(135deg,#c9a96e55,#6b1a2b66)', icon: '🌇' },
 //   { src: null, label: 'Forever',     size: 'port',  row: 2, gradient: 'linear-gradient(135deg,#2d101888,#c9a96e33)', icon: '♾️' },
 //   { src: null, label: 'Our City',    size: 'tall',  row: 2, gradient: 'linear-gradient(135deg,#8b2a3f55,#4a0f1c77)', icon: '🌆' },
-//   { src: null, label: 'Candid',      size: 'wide',  row: 2, gradient: 'linear-gradient(135deg,#6b1a2b66,#c9a96e22)', icon: '📷' },
+//   { src: null, label: 'Strolling',      size: 'wide',  row: 2, gradient: 'linear-gradient(135deg,#6b1a2b66,#c9a96e22)', icon: '📷' },
 //   { src: null, label: 'Promise',     size: 'sq',    row: 2, gradient: 'linear-gradient(135deg,#4a0f1c55,#6b1a2b77)', icon: '🤞' },
 //   { src: null, label: 'Bliss',       size: 'port',  row: 2, gradient: 'linear-gradient(135deg,#c9a96e33,#2d101888)', icon: '✨' },
 ];
