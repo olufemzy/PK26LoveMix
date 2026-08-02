@@ -305,7 +305,8 @@ nav{
 
 #lb-img {
   max-width: 90vw; max-height: 88vh;
-  object-fit: contain; display: block;
+  object-fit: cover; 
+  display: block;
   border-radius: 16px;
 }
 
